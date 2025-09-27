@@ -320,14 +320,6 @@ footer {
 }
 
 /* RESPONSIVE */
-@media (max-width: 1024px) {
-
-  .destinos .grid,
-  .actividades .grid {
-    max-width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
 @media (max-width: 768px) {
   nav ul {
     flex-direction: column;
@@ -347,10 +339,16 @@ footer {
     font-size: 1rem;
   }
 
-  .tipos-turismo .grid,
+
+  .tipos-turismo .grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+  }
+
+ 
   .destinos .grid,
   .actividades .grid {
-    grid-template-columns: 1fr; /* UNA sola columna */
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
@@ -393,4 +391,14 @@ footer {
   .grid p {
     font-size: 0.95rem;
   }
+
+  .tipos-turismo .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .destinos .grid,
+  .actividades .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
+
