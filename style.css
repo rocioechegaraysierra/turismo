@@ -327,28 +327,23 @@ footer {
     align-items: center;
   }
 
-  .hero {
-    padding: 60px 20px;
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .tipos-turismo .grid,
+  .destinos .grid,
+  .actividades .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   }
 
   .hero h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .hero p {
-    font-size: 1rem;
-  }
-
-
-  .tipos-turismo .grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, auto);
-  }
-
- 
-  .destinos .grid,
-  .actividades .grid {
-    grid-template-columns: repeat(3, 1fr);
+    font-size: 1.1rem;
   }
 }
 
@@ -356,20 +351,6 @@ footer {
   .btn-cta {
     padding: 12px 24px;
     font-size: 1rem;
-  }
-
-  header {
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-  }
-
-  nav ul {
-    gap: 8px;
-  }
-
-  .formulario form {
-    padding: 0 10px;
   }
 
   .hero h1 {
@@ -392,13 +373,15 @@ footer {
     font-size: 0.95rem;
   }
 
-  .tipos-turismo .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+  .tipos-turismo .grid,
   .destinos .grid,
   .actividades .grid {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .formulario form {
+    padding: 0 10px;
   }
 }
+
 
