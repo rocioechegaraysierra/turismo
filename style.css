@@ -1,0 +1,366 @@
+:root {
+  --azul-petroleo: #006D77;
+  --verde-menta: #A7C957;
+  --amarillo-acento: #FFE066;
+  --arena: #F4EBD0;
+  --gris-claro: #E5E5E5;
+  --blanco: #FFFFFF;
+  --gris: #4e4e4e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--blanco);
+  color: #333;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: var(--gris);
+  color: var(--blanco);
+}
+
+.logo {
+  width: 120px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+nav ul li a {
+  color: var(--blanco);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: var(--amarillo-acento);
+}
+
+/* HERO */
+.hero {
+  position: relative;
+  background-image: url('images/destino.png');
+  background-size: cover;
+  background-position: center;
+  color: var(--blanco);
+  text-align: center;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 40px;
+  border-radius: 12px;
+  max-width: 700px;
+  width: 100%;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-weight: 300;
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.hero-image {
+  max-width: 100%;
+  height: auto;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.btn-cta {
+  display: inline-block;
+  background-color: var(--amarillo-acento);
+  color: var(--azul-petroleo);
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color: var(--verde-menta);
+  color: var(--blanco);
+}
+
+/* SECCIONES */
+.importancia {
+  background-color: var(--gris-claro);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.importancia h2 {
+  color: var(--azul-petroleo);
+  margin-bottom: 15px;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+.importancia p {
+  max-width: 700px;
+  margin: auto;
+  font-weight: 300;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* GRID GENERICO */
+.grid div {
+  background-color: var(--blanco);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  cursor: default;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.grid div:hover {
+  transform: translateY(-8px);
+}
+
+.grid img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-bottom: 4px solid var(--azul-petroleo);
+}
+
+.grid h3 {
+  margin: 15px 10px 5px;
+  font-weight: 700;
+  color: var(--azul-petroleo);
+}
+
+.grid p {
+  margin: 0 15px 15px;
+  font-weight: 300;
+  color: #555;
+  flex-grow: 1;
+}
+
+/* TIPOS DE TURISMO */
+.tipos-turismo {
+  background-color: var(--gris-claro);
+  padding: 40px 20px;
+}
+
+.tipos-turismo h2 {
+  color: var(--azul-petroleo);
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.tipos-turismo .grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 25px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+
+.tipos-turismo .aventura {
+  border-top: 4px solid var(--amarillo-acento);
+}
+
+.tipos-turismo .cultural {
+  border-top: 4px solid var(--arena);
+}
+
+.tipos-turismo .gastronomico {
+  border-top: 4px solid var(--amarillo-acento);
+}
+
+.tipos-turismo .ecologico {
+  border-top: 4px solid var(--verde-menta);
+}
+
+/* DESTINOS */
+.destinos {
+  background-color: var(--gris-claro);
+  padding: 40px 20px;
+}
+
+.destinos h2 {
+  color: var(--azul-petroleo);
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.destinos .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* ACTIVIDADES */
+.actividades {
+  background-color: var(--arena);
+  padding: 40px 20px;
+}
+
+.actividades h2 {
+  color: var(--azul-petroleo);
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+.actividades .grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* FORMULARIO */
+.formulario {
+  background-color: var(--gris-claro);
+  padding: 40px 20px;
+}
+
+.formulario h2 {
+  color: var(--azul-petroleo);
+  text-align: center;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.formulario form {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+form input, form textarea {
+  padding: 12px;
+  border: 1px solid var(--gris-claro);
+  border-radius: 8px;
+  background-color: var(--blanco);
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+  resize: vertical;
+}
+
+form button {
+  background-color: var(--azul-petroleo);
+  color: var(--blanco);
+  padding: 14px;
+  border: none;
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: var(--verde-menta);
+  color: var(--azul-petroleo);
+}
+
+/* MAPA */
+.mapa {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: 0 auto 60px;
+}
+
+.mapa h2 {
+  color: var(--azul-petroleo);
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+/* FOOTER */
+footer {
+  background-color: var(--azul-petroleo);
+  color: var(--blanco);
+  text-align: center;
+  padding: 20px;
+  font-weight: 300;
+  font-size: 0.9rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+
+  .destinos .grid,
+  .actividades .grid {
+    max-width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .tipos-turismo .grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .destinos .grid,
+  .actividades .grid {
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-cta {
+    padding: 12px 24px;
+    font-size: 1rem;
+  }
+}

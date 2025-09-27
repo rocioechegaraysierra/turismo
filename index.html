@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Explora Turismo</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <header>
+    <img src="images/logo.png" alt="Logo Turismo" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#tipos">Tipos de Turismo</a></li>
+        <li><a href="#destinos">Destinos</a></li>
+        <li><a href="#actividades">Actividades</a></li>
+        <li><a href="#reserva">Reservas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="inicio" class="hero">
+    <div class="overlay">
+      <h1>Explorá el mundo, viví experiencias únicas</h1>
+      <p>Descubrí los mejores destinos turísticos del país y del mundo</p>
+      <a href="#reserva" class="btn-cta">Reservá ahora</a>
+    </div>
+  </section>
+
+  <section class="importancia">
+    <h2>¿Por qué es importante el turismo?</h2>
+    <p>El turismo impulsa el desarrollo económico, fomenta la cultura local y promueve la conservación del patrimonio natural y cultural. Además, crea conexiones humanas valiosas entre comunidades y visitantes.</p>
+  </section>
+
+  <section id="tipos" class="tipos-turismo">
+    <h2>Tipos de Turismo</h2>
+    <div class="grid">
+      <div class="aventura">
+        <img src="images/turismo-aventura.jpg" alt="Turismo de Aventura" />
+        <h3>Aventura</h3>
+        <p>Para los amantes de la adrenalina y la naturaleza en su máxima expresión.</p>
+      </div>
+      <div class="cultural">
+        <img src="images/turismo-cultural.jpg" alt="Turismo Cultural" />
+        <h3>Cultural</h3>
+        <p>Descubrí tradiciones, historia y arte de diferentes comunidades.</p>
+      </div>
+      <div class="gastronomico">
+        <img src="images/turismo-gastronomico.jpg" alt="Turismo Gastronómico" />
+        <h3>Gastronómico</h3>
+        <p>Explorá sabores auténticos y experiencias culinarias únicas.</p>
+      </div>
+      <div class="ecologico">
+        <img src="images/turismo-ecologico.jpg" alt="Turismo Ecológico" />
+        <h3>Ecológico</h3>
+        <p>Conectá con la naturaleza y fomentá la sostenibilidad ambiental.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="destinos" class="destinos">
+    <h2>Destinos Recomendados</h2>
+    <div class="grid">
+      <div>
+        <img src="images/destino-playa.jpg" alt="Playas Paradisíacas" />
+        <h3>Playas Paradisíacas</h3>
+        <p>Relajate en arenas blancas y aguas cristalinas.</p>
+      </div>
+      <div>
+        <img src="images/destino-montaña.jpg" alt="Montañas y Senderos" />
+        <h3>Montañas y Senderos</h3>
+        <p>Ideal para trekking, naturaleza y vistas panorámicas.</p>
+      </div>
+      <div>
+        <img src="images/destino-ciudad.png" alt="Ciudades con Historia" />
+        <h3>Ciudades con Historia</h3>
+        <p>Descubrí el patrimonio cultural y arquitectónico.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="actividades" class="actividades">
+    <h2>¿Qué podés hacer?</h2>
+    <div class="grid">
+      <div>
+        <img src="images/actividad-naturaleza.jpg" alt="Trekking" />
+        <h3>Naturaleza</h3>
+        <p>Explorá parques, reservas y paisajes increíbles.</p>
+      </div>
+      <div>
+        <img src="images/actividad-buceo.jpg" alt="Buceo" />
+        <h3>Buceo en arrecifes</h3>
+        <p>Sumergite y descubrí la vida marina.</p>
+      </div>
+      <div>
+        <img src="images/actividad-museo.jpg" alt="Museos" />
+        <h3>Visitas a Museos</h3>
+        <p>Aprendé sobre arte, historia y cultura local.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="reserva" class="formulario">
+    <h2>Reservá tu experiencia</h2>
+    <form>
+      <input type="text" name="nombre" placeholder="Nombre completo" required />
+      <input type="email" name="email" placeholder="Correo electrónico" required />
+      <input type="text" name="destino" placeholder="Destino de interés" />
+      <textarea name="mensaje" placeholder="Consulta o comentario"></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section class="mapa">
+    <h2>Ubicación Destino Rural - Buenos Aires</h2>
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13151.819920960615!2d-58.499997416918354!3d-34.60368436245559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac13e0913a5%3A0x32d3a1316f25f93c!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1695747300000!5m2!1ses!2sar"
+      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    <p>©2025 - SIERRA - Agencia de Turismo</p>
+  </footer>
+
+</body>
+</html>
