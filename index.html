@@ -25,8 +25,48 @@
   <section id="inicio" class="hero">
     <div class="overlay">
       <h1>Explorá el mundo, viví experiencias únicas</h1>
-      <p>Descubrí los mejores destinos turísticos del país y del mundo</p>
+      <p>Descubrí los mejores destinos turísticos del país y del mundo.</p>
       <a href="#reserva" class="btn-cta">Reservá ahora</a>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: OPINIONES DE NUESTROS VIAJEROS -->
+  <section class="opiniones-clientes" style="background-color: var(--blanco); padding: 70px 20px; text-align: center;">
+    <h2 style="color: var(--azul-petroleo); margin-bottom: 15px; font-weight: 700; font-size: 2.3rem;">Lo que dicen nuestros viajeros</h2>
+    <p style="max-width: 700px; margin: 0 auto 40px; font-weight: 300; color: #555; font-size: 1.1rem;">
+      Experiencias reales de quienes confiaron en nuestra agencia virtual para descubrir nuevos destinos.
+    </p>
+    
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 1000px; margin: 0 auto;">
+      
+      <!-- Reseña 1 -->
+      <div style="padding: 30px; background: var(--gris-claro); border-radius: 20px; text-align: left; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="color: #FFD700; font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+          <p style="font-style: italic; color: #444; margin-bottom: 20px; font-weight: 300; font-size: 0.95rem;">
+            "La facilidad para elegir la fecha y armar el itinerario desde la web fue increíble. La atención personalizada y el nivel de detalle superaron todas mis expectativas."
+          </p>
+        </div>
+        <div>
+          <h4 style="color: var(--azul-petroleo); margin: 0; font-weight: 700;">Mariana R.</h4>
+          <span style="font-size: 0.85rem; color: #777;">Viaje a la Patagonia</span>
+        </div>
+      </div>
+
+      <!-- Reseña 2 -->
+      <div style="padding: 30px; background: var(--gris-claro); border-radius: 20px; text-align: left; display: flex; flex-direction: column; justify-content: space-between;">
+        <div>
+          <div style="color: #FFD700; font-size: 1.2rem; margin-bottom: 10px;">★★★★★</div>
+          <p style="font-style: italic; color: #444; margin-bottom: 20px; font-weight: 300; font-size: 0.95rem;">
+            "Una propuesta súper moderna. Me encantó poder ver los tipos de turismo y hacer la pre-reserva de forma tan fluida y dinámica. ¡Muy recomendable!"
+          </p>
+        </div>
+        <div>
+          <h4 style="color: var(--azul-petroleo); margin: 0; font-weight: 700;">Lucas M.</h4>
+          <span style="font-size: 0.85rem; color: #777;">Turismo Aventura & Sostenible</span>
+        </div>
+      </div>
+
     </div>
   </section>
 
@@ -35,29 +75,52 @@
     <p>El turismo impulsa el desarrollo económico, fomenta la cultura local y promueve la conservación del patrimonio natural y cultural. Además, crea conexiones humanas valiosas entre comunidades y visitantes.</p>
   </section>
 
-  <section id="tipos" class="tipos-turismo">
+ <section id="tipos" class="tipos-turismo">
     <h2>Tipos de Turismo</h2>
     <div class="grid">
+      
+      <!-- Aventura -->
       <div class="aventura">
         <img src="images/turismo-aventura.jpg" alt="Turismo de Aventura" />
         <h3>Aventura</h3>
         <p>Para los amantes de la adrenalina y la naturaleza en su máxima expresión.</p>
       </div>
+
+      <!-- Cultural -->
       <div class="cultural">
         <img src="images/turismo-cultural.jpg" alt="Turismo Cultural" />
         <h3>Cultural</h3>
         <p>Descubrí tradiciones, historia y arte de diferentes comunidades.</p>
       </div>
+
+      <!-- Gastronómico -->
       <div class="gastronomico">
         <img src="images/turismo-gastronomico.jpg" alt="Turismo Gastronómico" />
         <h3>Gastronómico</h3>
         <p>Explorá sabores auténticos y experiencias culinarias únicas.</p>
       </div>
+
+      <!-- Ecológico -->
       <div class="ecologico">
         <img src="images/turismo-ecologico.jpg" alt="Turismo Ecológico" />
         <h3>Ecológico</h3>
         <p>Conectá con la naturaleza y fomentá la sostenibilidad ambiental.</p>
       </div>
+
+      <!-- NUEVO 1: Bienestar -->
+      <div class="bienestar" style="border-top: 6px solid var(--verde-menta);">
+        <img src="images/turismo-bienestar.jpg" alt="Turismo de Bienestar" />
+        <h3>Bienestar</h3>
+        <p>Experiencias de relajación, spas, termas y desconexión integral para el cuerpo y la mente.</p>
+      </div>
+
+      <!-- NUEVO 2: Exclusivo / Lujo -->
+      <div class="exclusivo" style="border-top: 6px solid var(--amarillo-acento);">
+        <img src="images/turismo-lujo.jpg" alt="Turismo Exclusivo" />
+        <h3>Exclusivo</h3>
+        <p>Itinerarios a medida, alojamientos de alta gama y atención personalizada de primer nivel.</p>
+      </div>
+
     </div>
   </section>
 
@@ -103,27 +166,84 @@
     </div>
   </section>
 
-  <section id="reserva" class="formulario">
+  <!-- SECCIÓN: TECNOLOGÍA & INNOVACIÓN (TECH STACK) -->
+  <section class="tech-stack" style="background-color: var(--blanco); padding: 70px 20px; text-align: center;">
+    <h2 style="color: var(--azul-petroleo); margin-bottom: 20px; font-weight: 700; font-size: 2.3rem;">Tecnología & Innovación</h2>
+    <p style="max-width: 750px; margin: 0 auto 40px; font-weight: 300; color: #555; font-size: 1.15rem; line-height: 1.8;">
+      Desarrollado bajo estándares modernos de ingeniería de software, arquitectura limpia y experiencias de usuario optimizadas para el sector turístico.
+    </p>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); max-width: 1000px; margin: 0 auto;">
+      <div style="padding: 25px;">
+        <h3 style="color: var(--azul-petroleo); margin-top: 0;">Frontend Moderno</h3>
+        <p style="margin: 0; font-size: 0.95rem; color: #666;">Interfaces responsivas con HTML5, CSS3 y JavaScript.</p>
+      </div>
+      <div style="padding: 25px;">
+        <h3 style="color: var(--azul-petroleo); margin-top: 0;">Arquitectura & Datos</h3>
+        <p style="margin: 0; font-size: 0.95rem; color: #666;">Estructuras escalables y lógica orientada a objetos.</p>
+      </div>
+      <div style="padding: 25px;">
+        <h3 style="color: var(--azul-petroleo); margin-top: 0;">Experiencias Inmersivas</h3>
+        <p style="margin: 0; font-size: 0.95rem; color: #666;">Integración de mapas interactivos y geolocalización.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECCIÓN: TESTIMONIOS / CASOS DE ÉXITO -->
+  <section class="testimonios" style="background-color: var(--gris-claro); padding: 70px 20px; text-align: center;">
+    <h2 style="color: var(--azul-petroleo); margin-bottom: 40px; font-weight: 700; font-size: 2.3rem;">Lo que dicen los referentes</h2>
+    <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); max-width: 1000px; margin: 0 auto;">
+      <div style="padding: 30px; background: var(--blanco); border-radius: 20px;">
+        <p style="font-style: italic; color: #555; margin-bottom: 20px; font-weight: 300;">"La integración de herramientas tecnológicas en la comercialización turística que propone este desarrollo marca un antes y un después para las agencias del sector."</p>
+        <h4 style="color: var(--azul-petroleo); margin: 0; font-weight: 700;">Lic. Marcos G.</h4>
+        <span style="font-size: 0.85rem; color: #777;">Consultor en Gestión Turística</span>
+      </div>
+      <div style="padding: 30px; background: var(--blanco); border-radius: 20px;">
+        <p style="font-style: italic; color: #555; margin-bottom: 20px; font-weight: 300;">"Una interfaz impecable, moderna y con una agilidad de navegación sobresaliente. Ideal para captar la atención en ferias internacionales."</p>
+        <h4 style="color: var(--azul-petroleo); margin: 0; font-weight: 700;">Sofía P.</h4>
+        <span style="font-size: 0.85rem; color: #777;">Directora de Operaciones de Viajes</span>
+      </div>
+    </div>
+  </section>
+
+<section id="reserva" class="formulario">
     <h2>Reservá tu experiencia</h2>
-    <form>
-      <input type="text" name="nombre" placeholder="Nombre completo" required />
-      <input type="email" name="email" placeholder="Correo electrónico" required />
-      <input type="text" name="destino" placeholder="Destino de interés" />
-      <textarea name="mensaje" placeholder="Consulta o comentario"></textarea>
-      <button type="submit">Enviar</button>
+    <form id="form-reserva">
+      <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required />
+      <input type="email" id="email" name="email" placeholder="Correo electrónico" required />
+      <input type="text" id="destino" name="destino" placeholder="Destino de interés" required />
+      
+      <!-- Nuevos campos de Fecha y Cantidad de Personas -->
+      <div style="display: flex; gap: 15px; flex-wrap: wrap;">
+        <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 5px;">
+          <label for="fecha" style="font-size: 0.85rem; color: var(--azul-petroleo); font-weight: 500;">Fecha de viaje:</label>
+          <input type="date" id="fecha" name="fecha" required style="width: 100%; box-sizing: border-box;" />
+        </div>
+        <div style="flex: 1; min-width: 200px; display: flex; flex-direction: column; gap: 5px;">
+          <label for="personas" style="font-size: 0.85rem; color: var(--azul-petroleo); font-weight: 500;">Cantidad de personas:</label>
+          <input type="number" id="personas" name="personas" min="1" max="20" value="1" required style="width: 100%; box-sizing: border-box; padding: 16px; border: 1px solid #e0e0e0; border-radius: 12px; background-color: var(--gris-claro); font-family: 'Poppins', sans-serif;" />
+        </div>
+      </div>
+
+      <textarea id="mensaje" name="mensaje" placeholder="Consulta o comentario adicional"></textarea>
+      <button type="submit">Confirmar Reserva</button>
     </form>
   </section>
 
-  <section class="mapa">
+<section class="mapa">
     <h2>Ubicación - La Rural - Buenos Aires</h2>
     <iframe
-      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13151.819920960615!2d-58.499997416918354!3d-34.60368436245559!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac13e0913a5%3A0x32d3a1316f25f93c!2sBuenos%20Aires!5e0!3m2!1ses!2sar!4v1695747300000!5m2!1ses!2sar"
-      width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy"
-      referrerpolicy="no-referrer-when-downgrade"></iframe>
+      width="100%" 
+      height="380" 
+      style="border:0;" 
+      allowfullscreen="" 
+      loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"
+      src="https://maps.google.com/maps?q=La+Rural,+Buenos+Aires&t=&z=15&ie=UTF8&iwloc=&output=embed">
+    </iframe>
   </section>
 
   <footer>
-    <p>©2025 - SIERRA - Agencia de Turismo</p>
+    <p>©2026 - Desarrollado por Rocio Luján Echegaray Sierra - SIERRA - Agencia de Turismo</p>
   </footer>
 
 </body>
